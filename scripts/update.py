@@ -160,7 +160,7 @@ def generate_language_chart(repos) -> None:
     # Plot
     plt.figure(figsize=(8, 4))
     bars = plt.bar(langs, values)
-    plt.title("Top Programming Languages")
+    plt.title("Most used programming languages in my public repositories")
     plt.ylabel("Percentage (%)")
     plt.ylim(0, max(values) + 5)
 
