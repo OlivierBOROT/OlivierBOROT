@@ -1,20 +1,18 @@
-<!-- HEADER -->
-<h1 align="center">👋 Hi, I'm Olivier BOROT</h1>
-<h3 align="center">Data Scientist - </h3>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=OlivierBOROT&style=flat-square" />
-</p>
+<h1 align="center">👋 Hi, I'm Olivier BOROT</h1>
+<h3 align="center">Data Scientist - Data Engineer - Data Analyst</h3>
 
 ---
 
 ## 🚀 About Me
-
 - 💼 SISE (Data Science) Master 2 Student at Université Lyon 2
 - 🔭 Cinema, building useless things to make my life a bit easier, and cinema
 - 🤖 Passionate about beautiful code, machine learning and everything else on Earth.
 - 📍 Based in Lyon & Grenoble, France
 - 📫 Contact: *olivier.dominique.borot@gmail.com*
+- 🔗 LinkedIn: [Olivier BOROT](https://www.linkedin.com/in/olivier-borot)
+- 📄 CV: [Link to my CV]()
+
 
 ## ⚙️ top languages
 
