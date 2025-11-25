@@ -1,7 +1,7 @@
 import requests
 import re
 import os
-import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 
 
 TOKEN = os.getenv("GITHUB_TOKEN")
@@ -103,6 +103,61 @@ def generate_section(repos: list) -> str:
 
     return text
 
+# --------------------------------------------------
+# Generate language usage chart
+# --------------------------------------------------
+def generate_language_chart(repos) -> None:
+    """Generate a bar chart of the top programming languages used across repositories.
+
+    Args:
+        repos (list): List of repositories.
+    """
+    lang_totals = {}
+
+    # Sum bytes per language from GitHub API
+    for r in repos:
+        url = f"https://api.github.com/repos/{USERNAME}/{r['name']}/languages"
+        res = requests.get(url, timeout=20, headers=HEADERS)
+        if res.status_code != 200:
+            continue
+        langs = res.json()
+        for lang, count in langs.items():
+            lang_totals[lang] = lang_totals.get(lang, 0) + count
+
+    # Top 5 languages
+    sorted_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)[:5]
+
+    # if no languages to plot
+    if not sorted_langs:
+            return  
+
+    total = sum(v for _, v in sorted_langs)
+    langs = [l for l, _ in sorted_langs]
+    values = [(v / total) * 100 for _, v in sorted_langs]
+
+    # Plot
+    fig = go.Figure(
+        data=[go.Bar(
+            x=langs,
+            y=values,
+            text=[f"{v:.1f}%" for v in values],
+            textposition="auto",
+            marker_color="cyan"
+        )]
+    )
+
+    fig.update_layout(
+        title="Most used programming languages in my public repositories",
+        yaxis_title="Percentage (%)",
+        template="plotly_dark",
+        xaxis_tickangle=-45,
+        margin=dict(l=40, r=40, t=60, b=40)
+    )
+
+    # Save chart as PNG
+    os.makedirs("charts", exist_ok=True)
+    fig.write_image("charts/top_languages.png", width=800, height=400)
+
 
 # --------------------------------------------------
 # Apply section to README
@@ -131,55 +186,6 @@ def update_readme(new_content: str) -> None:
 
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write(readme)
-
-
-# --------------------------------------------------
-# Generate language usage chart
-# --------------------------------------------------
-def generate_language_chart(repos) -> None:
-    """Generate a bar chart of the top programming languages used across repositories.
-
-    Args:
-        repos (list): List of repositories.
-    """
-    lang_totals = {}
-
-    # Sum bytes per language from GitHub API
-    for r in repos:
-        url = f"https://api.github.com/repos/{USERNAME}/{r['name']}/languages"
-        res = requests.get(url, timeout=20, headers=HEADERS)
-        if res.status_code != 200:
-            continue
-        langs = res.json()
-        for lang, count in langs.items():
-            lang_totals[lang] = lang_totals.get(lang, 0) + count
-
-    # Top 5 languages
-    sorted_langs = sorted(lang_totals.items(), key=lambda x: x[1], reverse=True)[:5]
-
-    total = sum(v for _, v in sorted_langs)
-    langs = [l for l, _ in sorted_langs]
-    values = [(v / total) * 100 for _, v in sorted_langs]
-
-    # Plot
-    plt.style.use('dark_background')
-    plt.figure(figsize=(8, 4))
-    bars = plt.bar(langs, values)
-    plt.title("Most used programming languages in my public repositories")
-    plt.ylabel("Percentage (%)")
-    plt.ylim(0, max(values) + 5)
-
-    for bar, v in zip(bars, values):
-        plt.text(bar.get_x() + bar.get_width()/2, bar.get_height(),
-                 f"{v:.1f}%", ha="center", va="bottom")
-
-    # Save image
-    os.makedirs("charts", exist_ok=True)
-    plt.tight_layout()
-    plt.savefig("charts/top_languages.png")
-    plt.close()
-
-
 
 # --------------------------------------------------
 # Main

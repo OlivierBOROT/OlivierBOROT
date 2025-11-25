@@ -22,7 +22,7 @@ jobs:
         python-version: "3.10"
 
     - name: Install dependencies
-      run: pip install requests matplotlib
+      run: pip install requests plotly
 
     - name: Run update script
       run: python scripts/update.py
