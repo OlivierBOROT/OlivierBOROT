@@ -17,7 +17,7 @@
 ## ⚙️ Most Used Languages
 
 <p align="center">
-  <img src="charts/top_languages.png" alt="Most Used Languages Chart"/>
+  <img src="charts/top_languages.html" alt="Most Used Languages Chart"/>
 </p>
 
 ---
