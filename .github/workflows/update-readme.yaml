@@ -31,6 +31,6 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add README.md charts/top_languages.png
+        git add README.md charts/top_languages.html
         git diff --cached --quiet || git commit -m "Auto-update README"
         git push
