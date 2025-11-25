@@ -15,4 +15,7 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=OlivierBOROT&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 🔥 Dynamic Stats
+
+<!--DYNAMIC_SECTION_START-->
+<!--DYNAMIC_SECTION_END-->
