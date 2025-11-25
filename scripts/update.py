@@ -3,6 +3,10 @@ import re
 import os
 import matplotlib.pyplot as plt
 
+
+TOKEN = os.getenv("GITHUB_TOKEN")
+HEADERS = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
+
 # --------------------------------------------------
 # Configuration
 # --------------------------------------------------
@@ -25,7 +29,7 @@ def get_repos() -> list:
     Returns:
         list: A list of repositories.
     """
-    res = requests.get(f"{API_BASE}/users/{USERNAME}/repos?per_page=100")
+    res = requests.get(f"{API_BASE}/users/{USERNAME}/repos?per_page=100", headers=HEADERS)
     res.raise_for_status()
     return res.json()
 
@@ -43,7 +47,7 @@ def get_commit_count(repo_name: str) -> int:
         int: The total commit count for the repository.
     """
     url = f"{API_BASE}/repos/{USERNAME}/{repo_name}/stats/contributors"
-    r = requests.get(url, timeout=20)
+    r = requests.get(url, timeout=20, headers=HEADERS)
 
     if r.status_code == 202:
         return 0
@@ -143,7 +147,7 @@ def generate_language_chart(repos) -> None:
     # Sum bytes per language from GitHub API
     for r in repos:
         url = f"https://api.github.com/repos/{USERNAME}/{r['name']}/languages"
-        res = requests.get(url, timeout=20)
+        res = requests.get(url, timeout=20, headers=HEADERS)
         if res.status_code != 200:
             continue
         langs = res.json()
@@ -158,6 +162,7 @@ def generate_language_chart(repos) -> None:
     values = [(v / total) * 100 for _, v in sorted_langs]
 
     # Plot
+    plt.style.use('dark_background')
     plt.figure(figsize=(8, 4))
     bars = plt.bar(langs, values)
     plt.title("Most used programming languages in my public repositories")

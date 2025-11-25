@@ -14,10 +14,10 @@
 - 📄 CV: [Link to my CV]()
 
 
-## ⚙️ top languages
+## ⚙️ Most Used Languages
 
 <p align="center">
-  <img src="charts/top_languages.png" alt="Top Languages Chart"/>
+  <img src="charts/top_languages.png" alt="Most Used Languages Chart"/>
 </p>
 
 ---
@@ -26,19 +26,8 @@
 ![](https://github-readme-stats.vercel.app/api?username=OlivierBOROT&theme=radical&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=OlivierBOROT&theme=radical&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=OlivierBOROT&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-## 🧠 Tech Stack
 
 ---
-
-# 📂 Featured Projects (Most Starred)
-
-<!--STARRED_SECTION_START-->
-Loading starred repositories...
-<!--STARRED_SECTION_END-->
-
----
-
-# ⏱ Latest & Most Active Repositories
 
 <!--DYNAMIC_SECTION_START-->
 ### ⏱ Latest Repositories
@@ -47,34 +36,18 @@ Loading starred repositories...
 - [M2-Projet-ENEDIS](https://github.com/OlivierBOROT/M2-Projet-ENEDIS) – updated 2025-11-04
 
 ### 📊 Most Active (by commits)
-- [M2-Projet-ENEDIS](https://github.com/OlivierBOROT/M2-Projet-ENEDIS) – 0 commits
-- [M2_R_Clustering_Shiny_App](https://github.com/OlivierBOROT/M2_R_Clustering_Shiny_App) – 0 commits
-- [OlivierBOROT](https://github.com/OlivierBOROT/OlivierBOROT) – 0 commits
+- [M2-Projet-ENEDIS](https://github.com/OlivierBOROT/M2-Projet-ENEDIS) – 51 commits
+- [OlivierBOROT](https://github.com/OlivierBOROT/OlivierBOROT) – 11 commits
+- [M2_R_Clustering_Shiny_App](https://github.com/OlivierBOROT/M2_R_Clustering_Shiny_App) – 2 commits
 
 <!--DYNAMIC_SECTION_END-->
 
 ---
 
-### 📈 General Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=OlivierBOROT&show_icons=true&theme=default" />
-</p>
-
-### 🗂 Most Used Languages
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OlivierBOROT&layout=compact" />
-</p>
-
 ### 🔥 Contribution Graph
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=OlivierBOROT&theme=tokyo-night&hide_border=true">
 </p>
-
-### 🥇 Commits per Repository
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OlivierBOROT&repo=REPO_NAME" />
-</p>
-
 
 ---
 ###  💻 All technologies:
