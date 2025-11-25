@@ -156,8 +156,8 @@ def generate_language_chart(repos) -> None:
 
     # Save chart as PNG
     os.makedirs("charts", exist_ok=True)
-    # html export
-    fig.write_html("charts/top_languages.html")
+    # png export
+    fig.write_image("charts/top_languages.png", width=800, height=400)
 
 
 # --------------------------------------------------
