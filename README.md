@@ -44,9 +44,7 @@
 
 ### 📈 Lines of Code Committed Per Day
 
-<p align="center">
-  <img src="charts/lines_per_day.png" alt="Lines of Code per Day"/>
-</p>
+![Lines of Code per Day](charts/lines_per_day.png)
 
 <!--DYNAMIC_SECTION_END-->
 
