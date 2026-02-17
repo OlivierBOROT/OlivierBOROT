@@ -14,41 +14,6 @@
 - 📄 CV: [Link to my CV]()
 
 
-## ⚙️ Most Used Languages
-
-<p align="center">
-  <img src="charts/top_languages.png" alt="Most Used Languages Chart"/>
-</p>
-
----
-
-### 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=OlivierBOROT&theme=radical&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=OlivierBOROT&theme=radical&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=OlivierBOROT&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
----
-
-<!--DYNAMIC_SECTION_START-->
-### ⏱ Latest Repositories
-- [OlivierBOROT](https://github.com/OlivierBOROT/OlivierBOROT) – updated 2026-02-16
-- [SISE_satelitar_identifier](https://github.com/OlivierBOROT/SISE_satelitar_identifier) – updated 2026-02-09
-- [SISE_WNN_implementation](https://github.com/OlivierBOROT/SISE_WNN_implementation) – updated 2026-02-05
-- [SISE_DiagnoSys](https://github.com/OlivierBOROT/SISE_DiagnoSys) – updated 2026-02-02
-- [Projet-ATLAS](https://github.com/OlivierBOROT/Projet-ATLAS) – updated 2026-01-22
-
-### 📊 Most Active (by commits)
-- [M2-Projet-ENEDIS](https://github.com/OlivierBOROT/M2-Projet-ENEDIS) – 0 commits
-- [M2_R_Clustering_Shiny_App](https://github.com/OlivierBOROT/M2_R_Clustering_Shiny_App) – 0 commits
-- [OlivierBOROT](https://github.com/OlivierBOROT/OlivierBOROT) – 0 commits
-- [Projet-ATLAS](https://github.com/OlivierBOROT/Projet-ATLAS) – 0 commits
-- [SISE_DiagnoSys](https://github.com/OlivierBOROT/SISE_DiagnoSys) – 0 commits
-
-### 📈 Lines of Code Committed Per Day
-
-![Lines of Code per Day](charts/lines_per_day.png)
-
-<!--DYNAMIC_SECTION_END-->
 
 ---
 
