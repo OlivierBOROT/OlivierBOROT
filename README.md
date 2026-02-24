@@ -11,7 +11,7 @@
 - 📫 Personal: [✉️ olivier.dominique.borot@gmail.com](mailto:olivier.dominique.borot@gmail.com)
 - 💼 Professional: [🏢 olivier.borot@univ-lyon2.fr](mailto:olivier.borot@univ-lyon2.fr)
 - 🔗 LinkedIn: [Olivier BOROT](https://www.linkedin.com/in/olivier-borot)
-- 📄 CV: [Link to my CV]()
+
 
 
 
